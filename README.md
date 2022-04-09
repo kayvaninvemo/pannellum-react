@@ -13,22 +13,22 @@ _Special thanks to [Matthew Petroff](https://github.com/mpetroff)_
 
 ## Install and Import
 
-Install pannellum-react component
+Install @karianpour/pannellum-react component
 
 ```bash
-npm install pannellum-react --save
+npm install @karianpour/pannellum-react --save
 ```
 
 or
 
 ```
-yarn add pannellum-react
+yarn add @karianpour/pannellum-react
 ```
 
-Import pannellum-react in your react component file by
+Import @karianpour/pannellum-react in your react component file by
 
 ```js
-import { Pannellum, PannellumVideo } from "pannellum-react";
+import { Pannellum, PannellumVideo } from "@karianpour/pannellum-react";
 ```
 
 _Note: By using import Pannellum from "pannellum-react/es/elements/Pannellum" the video.js component will be skipped, which decreases the production build by more than 500kb._
@@ -54,7 +54,10 @@ you can also use codesandbox playground
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-import { Pannellum, PannellumVideo } from "pannellum-react";
+import { Pannellum, PannellumVideo } from "@karianpour/pannellum-react";
+import "@karianpour/pannellum-react/es/pannellum/css/video-js.css";
+import "@karianpour/pannellum-react/es/pannellum/css/pannellum.css";
+import "@karianpour/pannellum-react/es/pannellum/css/style-textInfo.css";
 import myImage from "./images/alma.jpg";
 import myVideo from "./images/video.mp4";
 
